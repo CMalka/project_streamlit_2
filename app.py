@@ -61,11 +61,11 @@ def money(x):
 # ---------------------------------------------------------------------------
 @st.cache_data
 def load_data():
-    categories = pd.read_csv("data/categories.csv")
-    products = pd.read_csv("data/products.csv")
-    customers = pd.read_csv("data/customers.csv")
-    orders = pd.read_csv("data/orders.csv")
-    details = pd.read_csv("data/order_details.csv")
+    categories = pd.read_csv("categories.csv")
+    products = pd.read_csv("products.csv")
+    customers = pd.read_csv("customers.csv")
+    orders = pd.read_csv("orders.csv")
+    details = pd.read_csv("order_details.csv")
 
     orders["OrderDate"] = pd.to_datetime(orders["OrderDate"])
     customers["SignUpDate"] = pd.to_datetime(customers["SignUpDate"])
